@@ -3,6 +3,23 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* inizio classi utility */
+.bg-purple{
+    background-color: #9792E4ff;
+}
+.bg-light-blue{
+    background-color: #B5DDFFff;
+}
+.d-flex{
+    display: flex;
+}
+.flex-colum{
+    flex-direction: column;
+}
+.margin-0{
+    margin: 0 auto;
+}
+/* fine classi utility */
 /* header */
 header{
     background-color: #0084FDff;
@@ -11,7 +28,8 @@ header{
     filter: invert(1);
 }
 /* fine header */
-/* inizio contenitori */
+
+/* inizio contenitori header */
 .container-header{
     margin: 0 auto;
     width: 90%;
@@ -26,12 +44,67 @@ header{
 .content-header-desktop{
     display: none;
 }
-/* fine contenitori */
-/* inizio responsive */
-@media screen and (min-width: 480px){
+/* fine contenitori header */
+
+/* inizio contenitori main */
+.container{
+    width: 90%;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+.container-main-strategic{
+    width: 100%;
+    margin-top: 25px;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
     
 }
+.col-33, .col-66{
+    padding-top: 10px;
+}
+.col-66{
+  
+}
+.content{
+    height: 100px;
+    width: 100%;
+    
+}
+.img-main-1{
+    width: 20px;
+    height: 50px;
+
+}
+/* fine contenitori main */
+
+/* inizio responsive */
 @media screen and (min-width: 768px){
+    /* inizio main */
+    .container{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .row{
+        display: flex;
+        flex-direction: row;
+    }
+    .col-33{
+        width: calc(100% / 3 - 20px);
+        height: 100px;
+        margin: 10px;
+    }
+    .col-66{
+        width: calc(100% / 1.5 - 20px);
+        height: 100px;
+        margin: 10px;
+    }
+    .content{
+        
+    }
+}
+@media screen and (min-width: 1160px){
     /* header */
     .content-header-right{
         display: none;
@@ -41,14 +114,14 @@ header{
         align-items: center;
         color: white;
     }
-    ul{
+    header, ul{
         display: flex;
         flex-wrap: wrap;
         list-style: none;
         gap: 10px;
         padding-right: 10px;
     }
-    button{
+    header, button{
        padding: 8px; 
        border-radius: 14px;
        border: none;
