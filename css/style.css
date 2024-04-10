@@ -52,60 +52,78 @@ header{
     margin-top: 25px;
     margin-bottom: 30px;
 }
-.container-main-strategic{
-    width: 100%;
-    margin-top: 25px;
-}
 .row{
     display: flex;
     flex-wrap: wrap;
-    
 }
-.col-33, .col-66{
-    padding-top: 10px;
+.Get_a_demo_application{
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
-.col-66{
-  
+.strategic_Planning_with_img{
+    padding-bottom: 20px;
+}
+.col-66, .col-33{
+    padding-top: 24px;
+}
+
+.col-50{
+    margin: 10px;
+  height: 70px;
+  width: 100%;
+  background-color: silver;
 }
 .content{
-    height: 100px;
+    height: 100vh;
     width: 100%;
-    
 }
 .img-main-1{
-    width: 20px;
-    height: 50px;
+    width: 50%;
+    height: 50%;
 
 }
 /* fine contenitori main */
 
 /* inizio responsive */
 @media screen and (min-width: 768px){
+    /* inizio header */
+    .container-header{
+        max-width: 768px;
+    }
+    /* fine header */
     /* inizio main */
     .container{
-        width: 90%;
+        height: 100vh;
+        max-width: 768px;
         margin: 0 auto;
     }
     .row{
         display: flex;
         flex-direction: row;
+        margin-left: -10px ;
+        margin-right: -10px;
     }
     .col-33{
         width: calc(100% / 3 - 20px);
-        height: 100px;
         margin: 10px;
     }
     .col-66{
-        width: calc(100% / 1.5 - 20px);
+        width: calc((100% / 3)*2 - 20px);
         height: 100px;
         margin: 10px;
     }
     .content{
+        height: 200px;
         
     }
+    
+    
 }
 @media screen and (min-width: 1160px){
     /* header */
+    .container-header{
+        max-width: 1160px;
+    }
     .content-header-right{
         display: none;
     }
@@ -127,6 +145,14 @@ header{
        border: none;
     }
     /* fine header */
+    /* inizio main */
+    .container{
+        max-width: 1160px; 
+    }
+    .row{
+        display: flex;
+    }
+    /* fine main */
 }
 
 
