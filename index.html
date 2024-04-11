@@ -1,101 +1,398 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
+
 <head>
-    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real WebSite Responsive</title>
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
-    <header>
-        <div class="container-header">
-            <div class="row-header">
-                <div class="col-header">
-                    <div class="content-header-left">
-                        <img src="./img/logo.png" alt="logo">
-                    </div>
+    
+    <!--Header-->
+    <header class="main-header">
+        <div class="container-1140">
+            <div class="row-space-between">
+                <div class="col-2 logo">
+                    <img src="./img/logo.png" alt="Logo">
                 </div>
-                <div class="col-header">
-                    <div class="content-header-right">
-                        <span class="fas fa-bars menu-hamburger"></span>
-                    </div>
-                    <div class="content-header-desktop">
-                        <ul>
-                            <li>Planning</li>
-                            <li>Testimonials</li>
-                            <li>Features</li>
-                            <li>About Us</li>
-                        </ul>
-                        <button>Get Started</button>
-                    </div>
+                <div class="col-6 menu text-align-right margin-right-5">
+                    <ul class="main-menu">
+                        <li class="inline-block">
+                            <a class="menu-item color-white" href="#">Planning</a>
+                        </li>
+                        <li class="inline-block padding-left-15">
+                            <a class="menu-item color-white" href="#">Testimonials</a>
+                        </li>
+                        <li class="inline-block padding-left-15">
+                            <a class="menu-item color-white" href="#">Features</a>
+                        </li>
+                        <li class="inline-block padding-left-15">
+                            <a class="menu-item color-white" href="#">About Us</a>
+                        </li>
+                        <li class="inline-block padding-left-15">
+                            <a class="get-started-button" href="#">Get Started</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="toggle">
+                    <i class="fa-solid fa-bars color-white"></i>
                 </div>
             </div>
         </div>
     </header>
-    <main>
-        <!-- Get a demo application -->
-        <section class="Get_a_demo_application">
+    <!--//Header-->
 
-            <div class="container margin-0">
-                <div class="row flex-colum">
-                    <div class="col-66">
-                        <div class="content bg-light-blue ">
-                            <div class="card">
-                                <h2>Get a demo application</h2>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione nobis, architecto ad dolore quod, facere totam quas recusandae blanditiis</p>
-                                <button class="fab fa-apple"> App Store</button>
-                                <div>
-    
-                                    <img class="img-main-1" src="./img/phone.png">
-                                </div>
+    <!--Main-->
+    <main class="main-container">
+
+        <!--Features-->
+        <div class="container-1140 padding-top-50 padding-bottom-50">
+            <div class="row feature-up">
+                <div class="col-8-lg d-flex card-padding d-flex">
+                        <div class="row large-square">
+                            <div class="col-8-lg large-square-elements">
+                                <h4 class="large-square-title color-blue">
+                                    Get a demo application
+                                </h4> 
+                                <p class="large-square-caption">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Voluptatibus voluptate illo reiciendis dolore, sint dicta quia!
+                                        Dolor quasi odit.te sint assumenda?
+                                </p>
+                                <a class="app-store-button back-color-blue color-white" href="#"><i class="fa-brands fa-apple"></i> App Store</a>
                             </div>
-                            
+                            <div class="col-4-lg text-align-center align-self">
+                                <img class="large-square-img" src="./img/phone.png" alt="Phone">
+                            </div>
+                        </div>    
+                </div>
+                <div class="col-4-lg d-flex card-padding text-align-center">
+                    <div class="small-square">
+                        <i class="fa-solid fa-file-code color-blue square-icons"></i>
+                        <h3 class="small-square-title color-blue">
+                            Clean Code
+                        </h3>
+                        <p class="small-square-caption">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis nesciunt recusandae perspiciatis quam dolorem quisquam labore earum consequuntur sunt fugit.
+                        </p>
+                    </div>
+                    
+                </div>
+                <div class="col-4-lg d-flex card-padding text-align-center">
+                    <div class="small-square">
+                            <i class="fa-solid fa-compass-drafting color-blue square-icons"></i>
+                        <h3 class="small-square-title color-blue">
+                            Clean Code
+                        </h3>
+                        <p class="small-square-caption">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis nesciunt recusandae perspiciatis quam dolorem quisquam labore earum consequuntur sunt fugit.
+                        </p>
+                    </div>
+                    
+                </div>
+                <div class="col-4-lg d-flex card-padding text-align-center">
+                    <div class="small-square">
+                        <i class="fa-solid fa-laptop-code color-blue square-icons"></i>
+                        <h3 class="small-square-title color-blue">
+                            Clean Code
+                        </h3>
+                        <p class="small-square-caption">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis nesciunt recusandae perspiciatis quam dolorem quisquam labore earum consequuntur sunt fugit.
+                        </p>
+                    </div>
+                    
+                </div>
+                <div class="col-4-lg d-flex card-padding text-align-center">
+                    <div class="small-square">
+                        <i class="fa-solid fa-bullhorn color-blue square-icons"></i>
+                        <h3 class="small-square-title color-blue">
+                            Clean Code
+                        </h3>
+                        <p class="small-square-caption">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis nesciunt recusandae perspiciatis quam dolorem quisquam labore earum consequuntur sunt fugit.
+                        </p>
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+        <!--//Features-->
+
+        <!--Planning-->
+        <div class="planning">
+            <div class="container-1140">
+                <div class="row">
+                    <div class="col-6-lg d-flex">
+                        <div class="strategic-planning">
+                            <img  class="planning-main-img" src="./img/planning1.png" alt="">
+                            <h3 class="planning-title">
+                                Strategic Planning
+                            </h3>
+                            <p class="planning-caption color-white">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi quasi culpa adipisci quo officiis atque vel id sint alias laborum doloribus, deserunt perspiciatis inventore tenetur, officia doloremque, minus eaque magnam?
+                            </p>
                         </div>
                     </div>
-                    <div class="col-33">
-                        <div class="content bg-light-blue"></div>
-                    </div>
-                    <div class="col-33">
-                        <div class="content bg-light-blue"></div>
-                    </div>
-                    <div class="col-33">
-                        <div class="content bg-light-blue"></div>
-                    </div>
-                    <div class="col-33">
-                        <div class="content bg-light-blue"></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- strategic Planning with img -->
-        <section class="strategic_Planning_with_img bg-purple">
-            <div class="container margin-0">
-                <div class="row">
-                    <div class="col-50">
-                        <div class="content">1</div>
-                    </div>
-                    <div class="col-50">
-                        <div class="content">2</div>
+                    <div class="col-6-lg padding-top-225">
+                        <div class="developement d-flex align-items column text-align-center">
+                            <img class="developement-img" src="./img/planning2.png" alt="">
+                            <h5 class="developement-title">
+                                App Developement
+                            </h5>
+                            <p class="developement-caption">
+                                <em>Lorem ipsum dolor sit amet consectetur <br>
+                                    adipisicing elit. Molestias, expedita?</em> 
+                            </p>
+                            <a class="circle-down" href="#"><i class="fa-solid fa-arrow-down arrow-icon"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- testimonials -->
-        <section class="Testimonials">
-            <div class="container">
-                <div class="row">
-                    <div class="col"></div>
-                    <div class="col"></div>
-                    <div class="col"></div>
-                    <div class="col"></div>
-                </div>
-            </div>
-        </section>
+        </div>
+        <!--//Planning-->
 
-        
+        <!--Testimonials-->
+        <div class="testimonials">
+            <div class="container-1140 text-align-center padding-bottom-50 padding-top-50">
+                <h6 class="testimonials-title">
+                    TESTIMONIALS
+                </h6>
+                <h2 class="testimonials-subtitle color-violet">
+                    We are committed expert partners
+                </h2>
+                <p class="testimonials-caption">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus aperiam, odit accusantium a deserunt quas amet dignissimos blanditiis optio debitis!
+                </p>
+                <div class="card-padding align-items clearfix">
+                    <div class="card d-flex card-container">
+                        <img class="card-img" src="./img/testimonial1.jpg" alt="Testimonial">
+                    <div class="card-elements">
+                        <p class="card-caption text-align-left color-white">
+                            " Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora non nisi sapiente <br> nam consectetur ex id omnis labore minima distinctio. Sequi modi nemo. "
+                        </p>
+                        <h5 class="card-author color-white text-align-left">
+                            NAT REYNOLDS
+                        </h5>
+                    </div>
+                    </div>
+                </div>
+                <div class="card-padding align-items clearfix">
+                    <div class="card d-flex card-container">
+                        <img class="card-img" src="./img/testimonial2.jpg" alt="Testimonial">
+                    <div class="card-elements">
+                        <p class="card-caption text-align-left color-white">
+                            " Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora non nisi sapiente <br> nam consectetur ex id omnis labore minima distinctio. Sequi modi nemo. "
+                        </p>
+                        <h5 class="card-author color-white text-align-left">
+                            NAT REYNOLDS
+                        </h5>
+                    </div>
+                    </div>
+                </div>
+                <div class="card-padding align-items clearfix">
+                    <div class="card d-flex card-container">
+                        <img class="card-img" src="./img/testimonial3.jpg" alt="Testimonial">
+                    <div class="card-elements">
+                        <p class="card-caption text-align-left color-white">
+                            " Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora non nisi sapiente <br> nam consectetur ex id omnis labore minima distinctio. Sequi modi nemo. "
+                        </p>
+                        <h5 class="card-author color-white text-align-left">
+                            NAT REYNOLDS
+                        </h5>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--//Testimonials-->
+
+        <!--Benefits-->
+        <div class="benefits">
+            <div class="container-1140">
+                <h2 class="benefits-title">
+                    Benefits of working with us
+                </h2>
+                <div class="row">
+                    <div class="col-4-md card-padding">
+                        <div class="benefit-card">
+                            <h2 class="number">
+                                01
+                            </h2>
+                            <h4 class="benefit">
+                                High Quality
+                            </h4>
+                            <p class="benefit-caption">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit consequuntur adipisci ducimus vitae tempora molestias nobis quod doloribus architecto voluptatum.
+                            </p>
+                            <a class="more-button" href="#">more</a>
+                        </div>
+                        
+                    </div>
+                    <div class="col-4-md card-padding">
+                        <div class="benefit-card">
+                            <h2 class="number">
+                                02
+                            </h2>
+                            <h4 class="benefit">
+                                Creative Team
+                            </h4>
+                            <p class="benefit-caption">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit consequuntur adipisci ducimus vitae tempora molestias nobis quod doloribus architecto voluptatum.
+                            </p>
+                            <a class="more-button" href="#">more</a>
+                        </div>
+                        
+                    </div>
+                    <div class="col-4-md card-padding">
+                        <div class="benefit-card">
+                            <h2 class="number">
+                                03
+                            </h2>
+                            <h4 class="benefit">
+                                Amazing results
+                            </h4>
+                            <p class="benefit-caption">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit consequuntur adipisci ducimus vitae tempora molestias nobis quod doloribus architecto voluptatum.
+                            </p>
+                            <a class="more-button" href="#">more</a>
+                        </div>
+                        
+                    </div>
+                    <div class="col-4-md card-padding">
+                        <div class="benefit-card">
+                            <h2 class="number">
+                                04
+                            </h2>
+                            <h4 class="benefit">
+                                Best pricing
+                            </h4>
+                            <p class="benefit-caption">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit consequuntur adipisci ducimus vitae tempora molestias nobis quod doloribus architecto voluptatum.
+                            </p>
+                            <a class="more-button" href="#">more</a>
+                        </div>
+                        
+                    </div>
+                    <div class="col-4-md card-padding">
+                        <div class="benefit-card">
+                            <h2 class="number">
+                                05
+                            </h2>
+                            <h4 class="benefit">
+                                Innovations
+                            </h4>
+                            <p class="benefit-caption">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit consequuntur adipisci ducimus vitae tempora molestias nobis quod doloribus architecto voluptatum.
+                            </p>
+                            <a class="more-button" href="#">more</a>
+                        </div>
+                        
+                    </div>
+                    <div class="col-4-md card-padding">
+                        <div class="benefit-card">
+                            <h2 class="number">
+                                06
+                            </h2>
+                            <h4 class="benefit">
+                                24/7 Support
+                            </h4>
+                            <p class="benefit-caption">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit consequuntur adipisci ducimus vitae tempora molestias nobis quod doloribus architecto voluptatum.
+                            </p>
+                            <a class="more-button" href="#">more</a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--//Benefits-->
+
+        <!--About Us-->
+        <div class="about-us">
+            <div class="container-1140">
+                <div class="row">
+                    <div class="col-9-lg align-items padding-right-50">
+                        <h2 class="about-us-title">
+                            About Us
+                        </h2>
+                        <p class="about-us-caption">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro delectus, tempore quod consequatur explicabo repellendus incidunt vero quasi, autem ipsum dolorum libero ad sapiente hic sed unde in, voluptatum provident dignissimos! Debitis hic nam repudiandae quaerat perspiciatis, quo omnis ex.
+                        </p>
+                        <p class="about-us-caption margin-top-25">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro delectus, tempore quod consequatur explicabo repellendus incidunt vero quasi, autem ipsum dolorum libero ad sapiente hic sed unde in, voluptatum provident dignissimos! Debitis hic nam repudiandae quaerat perspiciatis, quo omnis ex.
+                        </p>
+                    </div>
+                    <div class="col-3-lg align-items">
+                        <div class="about-us-elements">
+                            <img class="about-img" src="./img/about.jpg" alt="About photo">
+                            <div class="virgoletta">
+                                <h5>
+                                    "
+                                </h5>
+                            </div>
+                            <h4 class="about-work color-violet">
+                                I help companies <br>
+                                tincidunt tortor <br>
+                                aliquam nulla <br>
+                                fermentum odio.
+                            </h4>
+                            <a class="linkedin-button text-align-center" href="#"><i class="fa-brands fa-linkedin"></i> Find me on Linkedin</a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--//About Us-->
+
+        <!--Cta-->
+        <div class="cta text-align-center">
+            <h6 class="on-title">
+                GET STARTED
+            </h6>
+            <h2 class="cta-title">
+                Simple, Transparent Pricing
+            </h2>
+            <h2 class="free-title">
+                It's Free!
+            </h2>
+            <p class="cta-caption color-white">
+                We're still in beta and we will be for awhile. As we add more <br>
+                functionallity, we'll look into other plans with more controls.
+            </p>
+            <a class="get-started-button-cta" href="#">Get Started</a>
+            <p class="color-white copyright margin-top-25">
+                Copyright 2021 Boolean Classe XX <a class="color-white" href="#">Privacy Policy</a>
+            </p>
+        </div>
+        <!--//Cta-->
+
+        <!--Footer-->
+        <footer class="main-footer text-align-center">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+                Officiis voluptatibus ducimus nam qui mollitia eos numquam. Impedit magnam tempora, <br>
+                delectus, pariatur minus, sed culpa repellat fugiat aliquid accusamus similique in.
+            </p>
+            <p class="lorem-ipsum">
+                <a href="#">Lorem ipsum</a> dolor sit amet consectetur adipisicing elit. Velit, iure. <a href="#">Boolean Careers</a>
+            </p>
+        </footer>
+        <!--//Footer-->
+
     </main>
+    <!--//Main-->
 
-    <footer></footer>
 </body>
+
 </html>
